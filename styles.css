@@ -1,0 +1,133 @@
+/*set the value of 1rem = 10px*/
+html {
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+  /*set some variables and styles for the entire page*/
+  body {
+    /*color pallete for styling*/
+    /*blues*/
+    --darker-blue: #03111A;
+    --dark-blue: #0A2333;
+    --medium-blue: #406680;
+    --light-blue: #8FACBF;
+    --lighter-blue: #CFDCE6;
+    /*reds*/
+    --darker-red: #330A12;
+    --dark-red: #80404D;
+    --medium-red: #BF8F99;
+    --light-red: #E6CFD3;
+    background: var(--darker-blue);
+  }
+  /*style all content*/
+  main {
+    background-color: var(--dark-blue);
+    color: var(--lighter-blue);
+    width: 95%;
+    margin: 1.6rem auto;
+    padding: 1.6rem 0;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+  }
+  /*style top level heading*/
+  h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    padding: 1.6rem 0;
+  }
+  /*style motto*/
+  #motto {
+    width: 90%;
+    margin: 0 auto;
+    font-style: italic;
+  }
+  /*style figure*/
+  figure {
+    width: 90%;
+    margin: 1.6rem auto;
+    padding: 1.6rem 0;
+    background: var(--darker-red);
+    border-radius: 0.8rem;
+  }
+  /*style image*/
+  img {
+    display: block;
+    max-width: 90%;
+    margin: 1.6rem auto;
+    border-radius: 0.8rem;
+  }
+  /*style figure caption*/
+  figcaption {
+    display: block;
+    max-width: 90%;
+    margin: 1.6rem auto;
+  }
+  /*style article*/
+  article {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /*style h2*/
+  h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+  }
+  /*style unordered list*/
+  ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /*style list items*/
+  li {
+    width: 90%;
+    margin: 1.6rem 0;
+  }
+  /*style blockquote*/
+  blockquote {
+    font-style: italic;
+    width: 90%;
+    margin: 1.6rem auto;
+    background-color: var(--darker-red);
+    padding: 1.6rem auto;
+    border-radius: 0.8rem;
+  }
+  /*style quote*/
+  #quote {
+    width: 90%;
+    margin: 1.6rem auto;
+    padding: 1.6rem;
+  }
+  /*style quote attribution*/
+  cite {
+    display: block;
+    max-width: 90%;
+    margin: 1.6rem auto;
+    padding-bottom: 1.6rem;
+  }
+  /*style suggestion for more info at the end*/
+  #more-info-paragraph {
+    width: 90%;
+    margin: 1.6rem auto;
+  }
+  /*style the link to more info*/
+  a {
+    color: var(--lighter-blue);
+  }
+  /*styles for bigger screens*/
+  @media screen and (min-width: 600px) {
+    /*make sure the content doesn't stretch too big so it remains readable*/
+    main {
+      max-width: 800px;
+    }
+    /*center title*/
+    h1, #motto {
+      text-align: center;
+    }
+    /*make heading bigger*/
+    h1 {
+      font-size: 3.6rem;
+    }
+  }
